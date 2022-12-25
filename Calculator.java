@@ -12,7 +12,7 @@ public class Calculator {
         trigratio = sc.next();
         //System.out.println(trigratio);
     }
-    void default() {
+    void defaultt() {
         String rats[][] = new String[7][7];
         
     }
