@@ -1,23 +1,27 @@
 import java.util.*;
 public class Calculator {
-    double degrees, minutes, value;
-    private String trigratio;
+    double result;
     Scanner sc = new Scanner(System.in);
+    double degrees, minutes;
+    String trigratio;
+    Calculator() {
+        result = 0.0d;
+    }
     void input() {
         System.out.print("Enter angle: ");
         degrees = sc.nextDouble();
         System.out.print("Enter minutes: ");
         minutes = sc.nextDouble();
         System.out.print("Enter trigonometric ratio: ");
-        trigratio = sc.next();
-        //System.out.println(trigratio);
+        trigratio = sc.next();      
     }
-    void defaultt() {
+    void output() {
+        TrigRatio rat = new TrigRatio(trigratio, degrees, minutes);
+        result = rat.calculate();
+        System.out.println("Value: " + result); 
+    }
+    /*void defaultt() {
         String rats[][] = new String[7][7];
         
-    }
-    public static void main(String[] args) {
-        Calculator khs = new Calculator();
-        khs.input();
-    }
+    }*/
 }
