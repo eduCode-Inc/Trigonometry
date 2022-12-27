@@ -1,0 +1,14 @@
+Trigonometric Calculator
+Any angle. Any ratio. Just enter 1 to start and 0 to stop.
+Enter: 1
+Enter angle: 60
+Enter minutes: 0
+Enter trigonometric ratio: cos
+Value: 0.5
+Thank you for using eduCode's product.
+Contact us at educode2021@outlook.com for customer service.
+For business inquiries, contact us at educode2021@gmail.com
+Any angle. Any ratio. Just enter 1 to start and 0 to stop.
+Enter: 0
+Thank you for using eduCode's product.
+Contact us at educode2021@outlook.com for customer service. For business inquiries, contact us at educode2021@gmail.com
