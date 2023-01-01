@@ -2,8 +2,9 @@ import java.util.*;
 public class RunThis {
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
+        Calculator edu = new Calculator();
         System.out.println("Trigonometric Calculator\n");
-        System.out.println("Any angle. Any ratio. Just enter 1 to start and 0 to stop.\n");
+        System.out.println("Any angle. Any ratio. Just enter 1 to start , 0 to stop, and 2 for standard angle ratios.\n");
         while (true) {
             System.out.print("Enter: ");
             int bn = sc.nextInt();
@@ -17,9 +18,13 @@ public class RunThis {
                     }
                 case 1:
                     {
-                        Calculator edu = new Calculator();
                         edu.input();
                         edu.output();
+                        break;
+                    }
+                case 2:
+                    {
+                        edu.deftable();
                         break;
                     }
             }
