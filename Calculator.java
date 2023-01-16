@@ -2,25 +2,31 @@ import java.util.*;
 public class Calculator {
     double result;
     Scanner sc = new Scanner(System.in);
-    double degrees, minutes;
+    double degrees, minutes, val;
     String trigratio;
     Calculator() {
         result = 0.0d;
     }
-    void input() {
+    void values() {
+        System.out.print("Enter trigonometric ratio: ");
+        trigratio = sc.next();
         System.out.print("Enter angle: ");
         degrees = sc.nextDouble();
         System.out.print("Enter minutes: ");
-        minutes = sc.nextDouble();
+        minutes = sc.nextDouble();TrigRatio rat = new TrigRatio(trigratio, degrees, minutes);
+        result = rat.calculateRatio();
+        System.out.println("Value: " + result + "\n");     
+    }
+    void angles() {
         System.out.print("Enter trigonometric ratio: ");
-        trigratio = sc.next();      
+        trigratio = sc.next();
+        System.out.print("Enter value: ");
+        val = sc.nextDouble();
+        TrigRatio rat = new TrigRatio(trigratio, val);
+        result = rat.calculateAngle();
+        System.out.println("Angle: " + result + "\n");
     }
-    void output() {
-        TrigRatio rat = new TrigRatio(trigratio, degrees, minutes);
-        result = rat.calculate();
-        System.out.println("Value: " + result + "\n"); 
-    }
-    void deftable() {
+    void deftables() {
         String rats[][] = {
             {"     ", "  0  ", " 30  ", " 45  ", " 60  ", " 90  "},
             {" sin ", "  0  ", " 1/2 ", " 1/\u221a2", " \u221a3/2", "  1  "},

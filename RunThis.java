@@ -1,12 +1,12 @@
 import java.util.*;
 public class RunThis {
     public static void main(String args[]) {
+        System.out.println("Trigonometric Calculator\n");
+        System.out.println("Any angle. Any ratio. Just enter 1 for angle to ratio, 2 for ratio to angle, 3 for standard angle ratios, and 0 to stop.\n");
         Scanner sc = new Scanner(System.in);
         Calculator edu = new Calculator();
-        System.out.println("Trigonometric Calculator\n");
-        System.out.println("Any angle. Any ratio. Just enter 1 to start , 0 to stop, and 2 for standard angle ratios.\n");
         while (true) {
-            System.out.print("Enter: ");
+            System.out.print("Enter choice: ");
             int bn = sc.nextInt();
             switch (bn) {
                 case 0:
@@ -18,13 +18,17 @@ public class RunThis {
                     }
                 case 1:
                     {
-                        edu.input();
-                        edu.output();
+                        edu.values();
                         break;
                     }
                 case 2:
                     {
-                        edu.deftable();
+                        edu.angles();
+                        break;
+                    }
+                case 3:
+                    {
+                        edu.deftables();
                         break;
                     }
             }
