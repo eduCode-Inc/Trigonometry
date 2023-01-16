@@ -1,4 +1,3 @@
-import java.util.*;
 public class TrigRatio {
     String ratio;
     double angle, minutes, rad, value;
