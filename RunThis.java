@@ -1,34 +1,54 @@
 import java.util.*;
 public class RunThis {
     public static void main(String args[]) {
-        System.out.println("Trigonometric Calculator\n");
-        System.out.println("Any angle. Any ratio. Just enter 1 for angle to ratio, 2 for ratio to angle, 3 for standard angle ratios, and 0 to stop.\n");
+        System.out.println("Mathematic Calculator\n");
+        System.out.println("Any angle. Any ratio. Just enter\nx to STOP\na for angle to ratio\nb for ratio to angle\nc for standard angle ratios\nd for square roots\ne for cube roots\nf for squares\ng for cubes\n");
         try (Scanner sc = new Scanner(System.in)) {
             Calculator edu = new Calculator();
             while (true) {
                 System.out.print("Enter choice: ");
-                int bn = sc.nextInt();
+                char bn = sc.next().charAt(0);
                 switch (bn) {
-                    case 0:
+                    case 'x':
                         {
                             System.out.println("Thank you for using eduCode's product.\n\nContact us at educode2021@outlook.com for customer service.");
                             System.out.print("For business inquiries, contact us at educode2021@gmail.com");
                             System.exit(0);
                             break;
                         }
-                    case 1:
+                    case 'a':
                         {
                             edu.values();
                             break;
                         }
-                    case 2:
+                    case 'b':
                         {
                             edu.angles();
                             break;
                         }
-                    case 3:
+                    case 'c':
                         {
                             edu.deftables();
+                            break;
+                        }
+                    case 'd':
+                        {
+                            edu.sqroot();
+                            break;
+                        }
+                    case 'e':
+                        {
+                            edu.cbroot();
+                            break;
+                        }
+                    case 'f':
+                        {
+                            edu.square();
+                            break;
+                        }
+                    case 'g':
+                        {
+                            edu.cube();
                             break;
                         }
                 }

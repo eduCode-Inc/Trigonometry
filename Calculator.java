@@ -13,7 +13,8 @@ public class Calculator {
         System.out.print("Enter angle: ");
         degrees = sc.nextDouble();
         System.out.print("Enter minutes: ");
-        minutes = sc.nextDouble();TrigRatio rat = new TrigRatio(trigratio, degrees, minutes);
+        minutes = sc.nextDouble();
+        TrigRatio rat = new TrigRatio(trigratio, degrees, minutes);
         result = rat.calculateRatio();
         System.out.println("Value: " + result + "\n");     
     }
@@ -42,5 +43,31 @@ public class Calculator {
             }
             System.out.println("\n");
         }
+    }
+    void sqroot() {
+        System.out.print("Enter number: ");
+        val = sc.nextDouble();
+        Root mus = new Root(val);
+        result = mus.squareroot();
+        System.out.println("Root: " + result + "\n");
+    }
+    void cbroot() {
+        System.out.print("Enter number: ");
+        val = sc.nextDouble();
+        Root mus = new Root(val);
+        result = mus.cuberoot();
+        System.out.println("Root: " + result + "\n");
+    }
+    void square() {
+        System.out.print("Enter number: ");
+        val = sc.nextDouble();
+        result = val*val;
+        System.out.println("Square: " + result + "\n");
+    }
+    void cube() {
+        System.out.print("Enter number: ");
+        val = sc.nextDouble();
+        result = val*val*val;
+        System.out.println("Cube: " + result + "\n");
     }
 }
